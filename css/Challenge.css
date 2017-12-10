@@ -1,0 +1,245 @@
+/* Définition des polices personnalisées */
+@font-face {
+  font-family: 'Good-night.ttf';
+  src: url('Good-night.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cac_champagneregular';
+    src: url('cac_champagne-webfont.eot');
+    src: url('cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('cac_champagne-webfont.woff2') format('woff2'),
+         url('cac_champagne-webfont.woff') format('woff'),
+         url('cac_champagne-webfont.ttf') format('truetype'),
+         url('cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+}
+/* Eléments principaux de la page */
+
+body
+{
+    background-image: linear-gradient(#a2a2a1, #555551);
+    background-repeat: no-repeat;
+    font-family: Georgia, Arial, sans-serif;
+    margin : 0;
+}
+
+#bloc_page
+{
+    width: 900px;
+}
+
+section h1, footer h1, nav a
+{
+    font-family: "cac_champagneregular", Arial serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+/* Header */
+
+header {
+    z-index: 1000;
+    width: 100%;
+    background-image: linear-gradient(#FFF,#db80e9);
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid pink;
+    position: fixed;
+}
+/*logo*/
+.logo img
+{
+    width: 500px;
+    height: 100px;
+
+}
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 25px;
+}
+
+nav a
+{
+    font-size: 1.5em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+nav a:active{
+  transition-duration: 15ms;
+}
+/*Section 1 Home*/
+#back{
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  width: 100%;
+  background-image: url("../image/flower3.jpg");
+  background-attachment: fixed;
+}
+.titre{
+  border: 2px solid gray;
+  position : relative;
+  text-transform: lowercase;
+  height: 350px;
+  width: 600px;
+  top: 290px;
+  left: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+  text-align-last: left;
+  background-color: rgba(85, 85, 81, 0.3);
+}
+.bouton{
+  font-family: Impact, Arial,sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-style: 20px;
+  display:block;
+  width:80px;
+  line-height:30px;
+  text-align:center;
+  vertical-align:middle;
+  margin: 0 auto;
+  padding-left: 15px;
+  color:black;
+  background-color: white;
+  text-decoration:none;
+  border: 1px solid black;
+}
+/*Produit*/
+#produit{
+  height: 500px;
+  width: 100%;
+  top: 300px;
+}
+h2{
+  text-align: right;
+  font-family: "cac_champagneregular", "Arial Black", Impact, sans-serif;
+  font-size: 3em;
+}
+figure{
+  display: inline-block;
+  margin: auto center;
+  border: 2px solid black;
+  background-color: white;
+  height: 240px;
+  width: 235px;
+}
+figure img{
+  height: 190px;
+  width: 200px;
+  margin: 10px 0px 0px 15px;
+}
+figure figcaption{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+figure span{
+  border: 1px solid pink;
+  background-color: gray;
+  margin-top: 4px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+figure h3{
+  margin: 0 auto;
+}
+
+/*Boutique*/
+
+#fond{
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 100%;
+  background-image: url("../image/flower14.jpg");
+}
+.bout{
+  border: 2px solid gray;
+  position : relative;
+  text-transform: lowercase;
+  height: 350px;
+  width: 600px;
+  top: 200px;
+  left: 605px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+  text-align-last: right;
+  background-color: rgba(85, 85, 81, 0.3);
+}
+.icone img{
+  height: 50px;
+  width: 50px;
+  margin: 0px 10px 10px 10px;
+}
+/*formulaire d'envoye*/
+.formulaire{
+  border: 2px solid lightgreen;
+  background-image: url("../image/wood4.png");
+  height: 400px;
+  width: 350px;
+  margin: 20px auto;
+  padding: 10px;
+}
+#nom, #mail{
+  display: block;
+  border: 1px solid black;
+  padding: 10px;
+  width: 200px;
+
+}
+textarea{
+  font-size: 1em;
+  border: 1px solid black;
+  padding: 10px;
+  width: 300px;
+  margin: 0 auto;
+}
+#envoyer{
+  display: block;
+  float: left;
+  width: 100px;
+  margin: 0px 0px 0px 40px;
+}
+#reset{
+  display: block;
+  float: right;
+  width: 100px;
+  margin: 0px 40px 0px 0px;
+}
+.clear{
+  clear: both;
+}
+/*Footer*/
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid Black;
+  height: 50px;
+  background-image: linear-gradient(darkgray, lightgreen);
+}
+.minicone img{
+  height: 45px;
+  width: 45px;
+}
