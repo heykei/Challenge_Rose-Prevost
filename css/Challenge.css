@@ -16,8 +16,7 @@
 
 body
 {
-    background-image: linear-gradient(#a2a2a1, #555551);
-    background-repeat: no-repeat;
+    background-image: linear-gradient(lightgray, gray, darkgray);
     font-family: Georgia, Arial, sans-serif;
     margin : 0;
 }
@@ -29,7 +28,7 @@ body
 
 section h1, footer h1, nav a
 {
-    font-family: "cac_champagneregular", Arial serif;
+    font-family: "cac_champagneregular", Arial, sans-serif;
     font-weight: normal;
     text-transform: uppercase;
 }
@@ -38,7 +37,7 @@ section h1, footer h1, nav a
 header {
     z-index: 1000;
     width: 100%;
-    background-image: linear-gradient(#FFF,#db80e9);
+    background-image: linear-gradient(#FFF, #db80e9);
     opacity: 0.9;
     display: flex;
     justify-content: space-between;
@@ -78,9 +77,6 @@ nav a:hover
 {
     color: #760001;
     border-bottom: 3px solid #760001;
-}
-nav a:active{
-  transition-duration: 15ms;
 }
 /*Section 1 Home*/
 #back{
@@ -122,6 +118,7 @@ nav a:active{
   text-decoration:none;
   border: 1px solid black;
 }
+
 /*Produit*/
 #produit{
   height: 500px;
@@ -153,15 +150,20 @@ figure figcaption{
   margin: 0 auto;
 }
 
-figure span{
+figure button{
   border: 1px solid pink;
   background-color: gray;
-  margin-top: 4px;
-  margin-right: 20px;
-  margin-bottom: 5px;
+  position: relative;
+  top: 5px;
+  right: 20px;
+  margin: 0;
 }
+
 figure h3{
-  margin: 0 auto;
+  position: relative;
+  top: 5px;
+  left: 20px;
+  margin: 0;
 }
 
 /*Boutique*/
@@ -185,7 +187,7 @@ figure h3{
   padding-right: 20px;
   text-align: justify;
   text-align-last: right;
-  background-color: rgba(85, 85, 81, 0.3);
+  background-color: rgba(85, 85, 81, 0.8);
 }
 .icone img{
   height: 50px;
@@ -195,7 +197,7 @@ figure h3{
 /*formulaire d'envoye*/
 .formulaire{
   border: 2px solid lightgreen;
-  background-image: url("../image/wood4.png");
+  background-image: url("../image/patternMosa2.jpg");
   height: 400px;
   width: 350px;
   margin: 20px auto;
@@ -240,6 +242,14 @@ footer{
   background-image: linear-gradient(darkgray, lightgreen);
 }
 .minicone img{
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
+}
+/*Mention Légale*/
+.mention{
+  background-color: Beige;
+  font-family: "Times New Roman", Georgia, sans-serif;
+  font-size: 1.5em;
+  text-align: justify;
+  text-align-last: left;
 }
